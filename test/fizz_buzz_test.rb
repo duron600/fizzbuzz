@@ -27,7 +27,7 @@ class FizzBuzzTest < Minitest::Test
     end
   end
 
-  def test_contains_5_and_not_multiples_of_3_should_print_fizz
+  def test_contains_5_and_not_multiples_of_3_should_print_buzz
     [5, 25, 52, 56].each do |n|
       assert_equal FizzBuzz::BUZZ, FizzBuzz.new(n).result
     end
