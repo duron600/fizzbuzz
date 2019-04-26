@@ -15,6 +15,10 @@ class FizzBuzz
       FIZZ
     elsif @number % 5 == 0
       BUZZ
+    elsif @number.to_s[/3/]
+      FIZZ
+    elsif @number.to_s[/5/]
+      BUZZ
     else
       @number
     end
